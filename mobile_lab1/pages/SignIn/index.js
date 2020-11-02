@@ -10,7 +10,7 @@ const SignIn = ({ navigation }) => {
     isValidEmail: false,
     isValidPassword: false,
     error: '',
-    name: 'user'
+    name: 'user',
   })
 
   const onButtonPress = () => {
@@ -20,10 +20,10 @@ const SignIn = ({ navigation }) => {
       .signInWithEmailAndPassword(email, password)
       .then(() => {navigation.navigate("Home", {name: data.name})})
       .catch(onLoginFail)
+  }
 
-    const onLoginFail = () => {
-      setData({ error: 'Authentication Failed'})
-    }
+  const onLoginFail = () => {
+    setData({ error: 'Authentication Failed'})
   }
 
   const validate = (text) => {
