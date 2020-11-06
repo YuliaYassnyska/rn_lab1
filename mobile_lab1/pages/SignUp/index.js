@@ -128,7 +128,7 @@ const SignUp = ({ navigation }) => {
                 <Text style={styles.qa}>Not with us yet?</Text>
                 <Text
                   style={styles.link}
-                  onClick={() => {
+                  onPress={() => {
                   navigation.navigate("SignIn")
                 }}
               >
@@ -151,58 +151,60 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#ecf0f1',
-    padding: '1rem',
-    width: '30rem',
-    height: '30rem',
+    padding: 16,
+    width: 400,
+    height: 450,
     justifyContent: 'center',
     alignContent: 'center',
   },
   titleWrapper: {
     display: 'flex',
     fontWeight: 'bold',
-    fontSize: '2rem',
+    fontSize: 32,
     justifyContent: 'center',
   },
   textWrapper: {
     display: 'flex',
-    fontSize: '1.2rem',
+    fontSize: 19.2,
   },
   rowContainer: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: '1rem',
-    border: '1px solid #ffffff',
-    padding: '1rem',
+    marginTop: 16,
+    borderWidth: 1, 
+    borderStyle: 'solid', 
+    borderColor: '#ffffff',
+    padding: 16,
   },
   buttonWrapper: {
     display: 'flex',
-    border: '1px solid #1A1E3D',
-    marginTop: '1rem',
+    borderWidth: 1, 
+    borderStyle: 'solid', 
+    borderColor: '#1A1E3D',
+    marginTop: 16,
   },
   lastRow: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: '0.5rem',
-    marginLeft: '1rem',
-    marginRight: '3rem',
+    padding: 8,
+    marginLeft: 16,
+    marginRight: 48,
   },
   qa: {
-    fontSize: '0.9rem',
+    fontSize: 14.4,
     color: '#1A1E3D',
   },
   link: {
     fontWeight: 'bold',
     color: '#6BB5C9',
-    textDecoration: 'underline',
   },
   errorText: {
-    fontSize: '0.7rem',
+    fontSize: 11.2,
     color: '#C7424F',
     fontWeight: 'bold',
-    textDecoration: 'overline',
-    width: '8rem',
+    width: 128,
   },
   contain: {
     display: 'flex',

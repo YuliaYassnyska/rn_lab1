@@ -41,20 +41,22 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#ecf0f1',
-    padding: '1rem',
-    width: '30rem',
-    height: '30rem',
+    padding: 16,
+    width: 400,
+    height: 400,
   },
   titleWrapper: {
     display: 'flex',
     fontWeight: 'bold',
-    fontSize: '2rem',
+    fontSize: 32,
     justifyContent: 'center',
   },
   buttonWrapper: {
     display: 'flex',
-    border: '1px solid #1A1E3D',
-    marginTop: '1rem',
+    borderWidth: 1, 
+    borderStyle: 'solid', 
+    borderColor: '#1A1E3D',
+    marginTop: 16,
   },
 })
 
